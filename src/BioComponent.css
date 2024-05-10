@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+.main-body {
+    height: 84vh; /* edit this to move main text up/down */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+.intro {
+  font-family: roboto, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+  
+.name-holder {
+  display: flex;
+}
+  
+.name {
+  border-right: 2px solid #CD6E2A /* rgba(0, 0, 0, 0.75) */;
+  font-size: 2rem;
+  font-family: merriweather, serif;
+  font-weight: 600;
+  margin-bottom: 4px;
+  letter-spacing: .2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter 2s steps(14) 1s 1 normal both,
+             blinkTextCursor 1000ms steps(14) infinite normal;             
+}
+  
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 21.7rem;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: #CD6E2A/* rgba(0, 0, 0, 0.75) */;}
+  to{border-right-color: transparent;}
+}  
+  
+.bio {
+  margin-top: 8px;
+  font-family: roboto;
+  font-weight: 400;
+}
+
+.green-text {
+  color: #27794d;
+}
+  
+.purple-text {
+  color: #6E2ACD;
+}
+
+.gap {
+  height: 2vh;
+}
